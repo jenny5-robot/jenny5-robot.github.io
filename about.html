@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>Jenny 5 robot</title>
+<meta name="keywords" content="robot, artificial intelligence, Johnny 5, Short circuit movie"/>
+<meta name="description" content="An almost humanoid robot"/>
+<meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+
+<center>
+<h1>Jenny 5 robot - short description</h1>
+</center>
+
+<table  cellpadding="8" width="800" align="center">
+	<tr>
+		<td valign="top">
+		<table  cellspacing="4" width="210">
+					<tr><td><a href ="index.html">Home</a></td></tr>
+					<tr><td><strong>About</strong></td></tr>
+					<tr><td><a href="cad.html">CAD</a></td></tr>
+					<tr><td><a href="software.html">Software</a></td></tr>
+					<tr><td><a href="manual/index.html">Assembly manual</a></td></tr>
+					<tr><td><a href="people.html">People</a></td></tr>
+					<tr><td><a href="press.html">Press coverage</a></td></tr>
+					<tr><td><a href="pictures.html">Pictures &amp; Videos</a></td></tr>
+					<tr><td><a href="roadmap.html">Development roadmap</a></td></tr>
+					<tr><td><a href="news.html">News</a></td></tr>
+		</table>
+		</td>
+		<td>
+
+<p>Jenny 5 is an (almost) humanoid robot intended to be used mainly for research but also as a human assistant. </p>
+
+<p>Jenny 5 was inspired by the Johnny 5 robot from the <a href="http://www.imdb.com/title/tt0091949/">Short circuit</a> movie. This a great movie that anyone must see.</p>
+
+<p>Jenny 5 has a mobile platform with tracks, a pliable leg, two arms with 6 degrees of freedom each, one head and one LIDAR.</p>
+
+<p>All source files (CAD, software etc) for Jenny 5 are freely available on <a href = "https://github.com/jenny5-robot">GitHub</a>. All code is released under <a href="https://en.wikipedia.org/wiki/MIT_License">MIT license</a> so that anyone can freely use it in both personal and commercial applications.</p>
+
+<p>Jenny 5 is easy and cheap to build. Most components can be purchased from robotics stores. Custom made parts can be printed with a 3D printer. Some aluminium profiles can be cut and drilled with tools available for hobbyists.</p> 
+
+<p>Materials (excepting the computer and webcams) cost about 1500 USD (please see the <a href="https://docs.google.com/spreadsheets/d/1SwaC4woJEvUEqn66lIG9MLYkuADfTsWIQtvDKaCQT1s/edit?usp=sharing">Bill of materials</a> for more details).</p>
+
+<p>Jenny 5 is designed in <a href="http://www.openscad.org">OpenSCAD</a> which is a CAD software where you write instructions, instead of using the mouse, to create objects.</p>
+
+<p>The platform is driven by 2 DC motors with planetary gearbox controlled by a <a href="http://www.ionmc.com">RoboClaw</a> board.</p>
+
+<p>The leg is driven by 2 linear motors controlled by a RoboClaw board.</p>
+
+<p>LIDAR consists of a <a href = "http://www.teraranger.com/">TeraRanger One</a> sensor, a stepper motor and infrared distance sensor (used as reference). All components are controlled by an Arduino Nano board.</p>
+
+<p>Each arm has 5 stepper motors and each joint has attached a potentiometer for reading its position. Motors and sensors are controlled again by an Arduino Nano board.</p>
+
+<p>The gripper is moved by a linear stepper motor and the closed position is determined with the help of a button. The gripper is connected to the same Arduino board as the entire arm. Gripper has attached an webcam used for recognising objects closed to it.</p>
+
+<p>The head has 2 degrees of freedom ensured by 2 stepper motors which have potentiometers attached for reading the position. The head has a webcam for object detection and an ultrasonic sensor for distance measurement. All head components, except the camera, are connected to an Arduino Nano board.</p>
+
+<p>The entire robot is powered by 3 LiPo batteries: one for platform and foot, one for arms and head, and one for the LIDAR sensor.</p>
+
+<p>Arduino boards run a specially crafted firmware called <a href="https://github.com/jenny5-robot/jenny5-firmware">Jenny5-firmware</a> which is able to control multiple stepper motors and read a variety of sensors: buttons, ultrasonic, potentiometers, infrared, LIDAR etc.</p>
+
+<p>PC software is built around several libraries which send commands, on a serial port, to Arduino boards and to the RoboClaw controller.</p>
+
+
+<p>Having all these elements, the robot can be utilised in a wide range of scenarios. Here are a short list of things that the robot could do (if programmed correctly):</p>
+
+
+<ul>
+
+<li>House cleaning</li>
+
+<li>Food preparation</li>
+
+<li>Cleaning kitchen table</li>
+
+<li>Working in the garden</li>
+
+<li>Surveillance</li>
+
+<li>Rescue</li>
+
+<li>Disaster management</li>
+
+<li>Fire fighting</li>
+
+<li>...</li>
+
+</ul>
+
+<p>Jenny 5 is currently developed within the <a href="http://www.uab.ro">1 Decembrie 1918 University of Alba-Iulia, Romania</a></p>
+
+<p>For more details please subscribe to our <a href="https://groups.google.com/forum/#!forum/jenny5">Google group</a></p>
+				
+		
+	</td>
+		</tr>
+</table>
+
+
+
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10820854; 
+var sc_invisible=1; 
+var sc_security="8d6d9f6d"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10820854/0/8d6d9f6d/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+
+</html>

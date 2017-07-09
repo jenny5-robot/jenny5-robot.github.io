@@ -1,0 +1,63 @@
+
+A
+{
+	color: blue;
+	text-decoration: underline;
+}
+A:hover
+{
+	color: #9D0000;
+	text-decoration: underline;
+}
+TD.descript
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	line-height: 18px;
+}
+TD.meniu
+{
+	background: #999999 url(images/menu.png) repeat-x 0 0;
+}
+BODY
+{
+	background-image: url(images/bg.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+div {
+    width: 854px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#id1 {
+    line-height:30px;
+    height:300px;
+    width:400px;
+    float:left;
+    padding:5px;	          
+}
+
+#id2 {
+    line-height:30px;
+    height:300px;
+    width:400px;
+    float:right;
+    padding:5px;	          
+}
+
+#centru{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
