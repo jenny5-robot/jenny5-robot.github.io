@@ -37,34 +37,33 @@
 
 <p>Jenny 5 was inspired by the Johnny 5 robot from the <a href="http://www.imdb.com/title/tt0091949/">Short circuit</a> movie. This a great movie that anyone must see.</p>
 
-<p>Jenny 5 has a mobile platform with tracks, a pliable leg, two arms with 6 degrees of freedom each, one head and one LIDAR.</p>
+<p>Jenny 5 has a mobile platform with tracks, a pliable leg, two arms with 6 degrees of freedom each and one head</p>
 
 <p>All source files (CAD, software etc) for Jenny 5 are freely available on <a href = "https://github.com/jenny5-robot">GitHub</a>. All code is released under <a href="https://en.wikipedia.org/wiki/MIT_License">MIT license</a> so that anyone can freely use it in both personal and commercial applications.</p>
 
 <p>Jenny 5 is easy and cheap to build. Most components can be purchased from robotics stores. Custom made parts can be printed with a 3D printer. Some aluminium profiles can be cut and drilled with tools available for hobbyists.</p> 
 
-<p>Materials (excepting the computer and webcams) cost about 1500 USD (please see the <a href="https://docs.google.com/spreadsheets/d/1SwaC4woJEvUEqn66lIG9MLYkuADfTsWIQtvDKaCQT1s/edit?usp=sharing">Bill of materials</a> for more details).</p>
+<p>Materials (excepting the computer and webcams) cost about 2500 USD (please see the <a href="https://docs.google.com/spreadsheets/d/1SwaC4woJEvUEqn66lIG9MLYkuADfTsWIQtvDKaCQT1s/edit?usp=sharing">Bill of materials</a> for more details).</p>
 
 <p>Jenny 5 is designed in <a href="http://www.openscad.org">OpenSCAD</a> which is a CAD software where you write instructions, instead of using the mouse, to create objects.</p>
 
-<p>The platform is driven by 2 DC motors with planetary gearbox controlled by a <a href="http://www.ionmc.com">RoboClaw</a> board.</p>
+<p>The platform is driven by 2 DC motors with planetary gearbox controlled by a <a href="https://www.basicmicro.com/">RoboClaw</a> board.</p>
 
 <p>The leg is driven by 2 linear motors controlled by a RoboClaw board.</p>
 
-<p>LIDAR consists of a <a href = "http://www.teraranger.com/">TeraRanger One</a> sensor, a stepper motor and infrared distance sensor (used as reference). All components are controlled by an Arduino Nano board.</p>
+<p>Each arm has 6 stepper motors and each joint has attached a magnetic sensor for reading its position. Motors and sensors are controlled by an <a href = "https://www.pololu.com/product/3145">A-Star 32U4 Mini</a> board.</p>
 
-<p>Each arm has 5 stepper motors and each joint has attached a potentiometer for reading its position. Motors and sensors are controlled again by an Arduino Nano board.</p>
+<p>The gripper is powered by a servor motor. The gripper is connected to the same A-Star 32U4 Mini board as the entire arm. Gripper has attached an webcam used for recognising objects closed to it.</p>
 
-<p>The gripper is moved by a linear stepper motor and the closed position is determined with the help of a button. The gripper is connected to the same Arduino board as the entire arm. Gripper has attached an webcam used for recognising objects closed to it.</p>
+<p>The head has 2 degrees of freedom ensured by 2 stepper motors which have magnetic attached for reading the position. The head has a webcam for object detection and an ultrasonic sensor for distance measurement. All head components, except the camera, are connected to an <a href = "https://store.arduino.cc/arduino-nano">Arduino Nano</a>board.</p>
 
-<p>The head has 2 degrees of freedom ensured by 2 stepper motors which have potentiometers attached for reading the position. The head has a webcam for object detection and an ultrasonic sensor for distance measurement. All head components, except the camera, are connected to an Arduino Nano board.</p>
+<p>The entire robot is powered by 2 LiPo batteries: one for platform and foot and one for arms and head.</p>
 
-<p>The entire robot is powered by 3 LiPo batteries: one for platform and foot, one for arms and head, and one for the LIDAR sensor.</p>
+<p>A-Star / Arduino boards run a specially crafted firmware called <a href="https://github.com/jenny5-robot/jenny5-firmware">Scufy</a> which is able to control multiple stepper motors and read a variety of sensors: buttons, ultrasonic, potentiometers, infrared, LIDAR etc.</p>
 
-<p>Arduino boards run a specially crafted firmware called <a href="https://github.com/jenny5-robot/jenny5-firmware">Jenny5-firmware</a> which is able to control multiple stepper motors and read a variety of sensors: buttons, ultrasonic, potentiometers, infrared, LIDAR etc.</p>
+<p>PC software is built around several libraries which send commands, on a serial port, to A-Star/ Arduino boards and to the RoboClaw controller.</p>
 
-<p>PC software is built around several libraries which send commands, on a serial port, to Arduino boards and to the RoboClaw controller.</p>
-
+The robot can be manually controlled by an HTML5 application running within browser  on  a  smartphone. The  HTML5  application  connects  with  a  server running on the robot. The server is the one that actually execute the commands(move, read sensors) etc. The server is built on a top of a light WebSocket server.
 
 <p>Having all these elements, the robot can be utilised in a wide range of scenarios. Here are a short list of things that the robot could do (if programmed correctly):</p>
 
@@ -91,9 +90,11 @@
 
 </ul>
 
-<p>Jenny 5 is currently developed within the <a href="http://www.uab.ro">1 Decembrie 1918 University of Alba-Iulia, Romania</a></p>
+<p>The main author works at <a href="http://www.uab.ro">1 Decembrie 1918 University of Alba-Iulia, Romania, where Jenny 5 is used for teaching purposes.</a></p>
 
-<p>For more details please subscribe to our <a href="https://groups.google.com/forum/#!forum/jenny5">Google group</a></p>
+<p>For more details please read the <a href= "">technical report</a> about Jenny 5.</p>
+
+<p>You can also subscribe to Jenny 5 <a href="https://groups.google.com/forum/#!forum/jenny5">Google group</a></p>
 				
 		
 	</td>
